@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio de Programador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo básico para todo el cuerpo de la página */
+    body {
+      /* Fuente a utilizar */
+      font-family: 'Quicksand', sans-serif;
+
+      /* Elimina los márgenes predeterminados del navegador */
+      margin: 0;
+    }
+
+    /* Estilos comunes para la cabecera y el pie de página */
+    .header,
+    .footer {
+      /* Color de fondo y texto */
+      background-color: #333;
+      color: #fff;
+
+      /* Centrado de texto */
+      text-align: center;
+
+      /* Espaciado interior */
+      padding: 10px;
+
+      /* Ancho al 100% de su contenedor */
+      width: 100%;
+    }
+
+    /* Estilo para el contenido principal */
+    .main {
+      /* Flexbox para alinear los elementos en el centro */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /*  Tenga un ancho máximo de 768 píxeles */
+      max-width: 768px;
+      /* Tenga un relleno de 16 píxeles en los lados izquierdo y derecho */
+      padding-left: 16px;
+      padding-right: 16px;
+      /* Ajusta el margen derecho del elemento automáticamente */
+      margin-left: auto;
+      margin-right: auto;
+
+      /* Espaciado interior */
+      padding: 20px;
+
+      /* Centrado de texto */
+      text-align: center;
+
+      /* Ancho definido al 60% del contenedor. Puedes ajustar este valor. */
+      width: 60%;
+
+      /* Sombra suave alrededor del contenido principal para resaltarlo del fondo */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo para las secciones individuales del contenido principal */
+    .section {
+      /* Espacio en la parte inferior de cada sección */
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para las tarjetas de proyectos */
+    .card {
+      /* Sombra alrededor de cada tarjeta para darle un efecto 3D */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      /* Espacio alrededor de cada tarjeta */
+      margin: 20px;
+
+      /* Alineación del texto a la izquierda */
+      text-align: left;
+
+      /* Ancho definido de cada tarjeta. Puedes ajustar este valor. */
+      width: 30%;
+
+      /* Hacer que las tarjetas se alineen en horizontal */
+      display: inline-block;
+    }
+
+    /* Estilo para las imágenes dentro de las tarjetas */
+    .card img {
+      /* Hacer que las imágenes ocupen todo el ancho de la tarjeta */
+      width: 100%;
+      height: 200px;
+      /* Ajusta este valor según tus necesidades */
+      object-fit: cover;
+      /* Asegura que las imágenes cubran completamente el área sin distorsionarse */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Bienvenido a mi Portafolio</h1>
+  </div>
+
+  <div class="main">
+    <div class="section">
+      <h2>Sobre mí</h2>
+      <p>Soy un programador con experiencia en varios lenguajes y plataformas...</p>
+    </div>
+
+    <div class="section">
+      <h2>Proyectos</h2>
+      <!-- Tarjetas de proyectos -->
+      <div class="card">
+        <img
+          src="https://media3.giphy.com/media/3oEjHCF6kGlXK0ofsY/200w.webp?cid=ecf05e471h93lt20o8j3n82oqggnao5g4skc1kmxiqsaxdlr&ep=v1_gifs_search&rid=200w.webp&ct=g"
+          alt="Imagen del Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Descripción del proyecto 1...</p>
+      </div>
+      <div class="card">
+        <img
+          src="https://media3.giphy.com/media/V4NSR1NG2p0KeJJyr5/200.webp?cid=ecf05e47l9nm19bsvr85ba2xtxw6t0r0w2c74tm8b9qt8khw&ep=v1_gifs_search&rid=200.webp&ct=g"
+          alt="Imagen del Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto 2...</p>
+      </div>
+      <div class="card">
+        <img
+          src="https://media3.giphy.com/media/lGD7VxrtwNalqhx68w/giphy.webp?cid=ecf05e47l9nm19bsvr85ba2xtxw6t0r0w2c74tm8b9qt8khw&ep=v1_gifs_search&rid=giphy.webp&ct=g"
+          alt="Imagen del Proyecto 3">
+        <h3>Proyecto 3</h3>
+        <p>Descripción del proyecto 3...</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Servicios</h2>
+      <p>Ofrezco servicios de programación a medida, diseño de páginas web, desarrollo de aplicaciones móviles...</p>
+    </div>
+
+    <div class="section">
+      <h2>Contacto</h2>
+      <p>Si estás interesado en trabajar conmigo, puedes contactarme a través de...</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2023 Mi Nombre. Todos los derechos reservados.</p>
+  </div>
+</body>
+
+</html>
